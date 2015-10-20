@@ -1,0 +1,30 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	-fx-font-size: 26.0px;
+}
+.button {
+	-fx-max-width:2000.0px;
+	-fx-max-height:2000.0px;
+	-fx-border-color: #FFFFFF;
+}
+
+#calc_result_field {
+	-fx-text-alignment: right;
+	-fx-background-color: #C0C0C0;
+	-fx-border-color: #FFFFFF;
+	-fx-cursor: default;
+}
+
+.calc_button {
+	-fx-cursor: hand;
+	-fx-background-color: #909090;
+}
+
+.calc_button:hover {
+	-fx-background-color: #707070;
+}
+
+.calc_button:pressed {
+	-fx-background-color: #505050;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="800.0" maxWidth="800.0" minHeight="250.0" minWidth="250.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FxCalc">
+  <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="1" GridPane.rowIndex="3" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="0" GridPane.rowIndex="4" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="+/-" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="4" GridPane.rowIndex="2" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="7" GridPane.rowIndex="1" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="√" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="calc_button" text="\%" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Button id="c_button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#click" styleClass="number_button" text="C" GridPane.columnIndex="4" />
+      <TextField id="calc_result_field" fx:id="display" alignment="CENTER_RIGHT" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnSpan="4">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+   </children>
+</GridPane>
